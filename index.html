@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Disqueria</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+  </style>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+
+<body>
+  <header>
+    <h1>Tienda de discos
+    </h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#" onclick="showTab('vinilos')">Vinilos</a></li>
+        <li><a href="#" onclick="showTab('cds')">CD’s</a></li>
+        <li><a href="#" onclick="showTab('cassettes')">Cassettes</a></li>
+        <li><a href="#" onclick="showTab('libros')">Libros</a></li>
+        <li><a href="#" onclick="showTab('merch')">Merch</a></li>
+        <li><a href="#" onclick="showTab('accesorios')">Accesorios</a></li>
+        <li><a href="#" onclick="showTab('artistas')">Artistas</a></li>
+      </ul>
+      <form class="search">
+        <input type="search" placeholder="Buscar">
+        <button>🔍</button>
+      </form>
+    </nav>
+  </header>
+
+  <main>
+    <section id="vinilos" class="tab-content active">
+      <h2>Vinilos</h2>
+      
+<article class="product-card vinilo nuevos">
+          <h3><a href="productos/disco1.html">Vinilo Nuevo 1</a></h3>
+  <img src="/productos/assets/only_lovers_left_alive.jpeg" alt="Vinilo">
+  <p>$12.990</p>
+</article>
+
+      <article  class="product-card">
+        <h3>Disco Blanco</h3>
+        <img src="/assets/mockup-de-cd-con-cubierta-y-petalos.jpg" alt="Vinilo">
+        <p>$Precio</p>
+      </article>
+
+            <article  class="product-card">
+        <h3>Disco Blanco</h3>
+        <img src="/assets/2148487168.jpg" alt="Vinilo">
+<p>$Precio</p>
+      </article>
+
+      <article  class="product-card">
+        <h3>Disco Blanco</h3>
+        <img src="/assets/61569.jpg" alt="Vinilo">
+        <p>$Precio</p>
+      </article>  
+
+          <article  class="product-card">
+        <h3>Disco Blanco</h3>
+        <img src="/assets/9284071.jpg" alt="Vinilo">
+        <p>$Precio</p>
+      </article>  
+      
+    </section>
+
+    <section id="cds" class="tab-content">
+      <h2>CD’s</h2>
+
+      <p>Productos en formato CD.</p>
+    </section>
+    <img src="/assets/IMG_20250613_222106296.jpeg" alt="Vinilo">
+    <section id="cassettes" class="tab-content">
+      <h2>Cassettes</h2>
+      <p>Contenido para cassettes.</p>
+    </section>
+
+    <section id="libros" class="tab-content">
+      <h2>Libros</h2>
+      <p>Libros disponibles.</p>
+      <img src="/assets/mapa de Gleason.jpg" alt="">
+      
+    </section>
+
+    <section id="merch" class="tab-content">
+      <h2>Formulario Merch</h2>
+      <img src="assets/9284071.jpg" alt="">
+      <form>
+        <label for="nombre">Producto:</label>
+        <input type="text" id="nombre"><br><br>
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio"><br><br>
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+
+    <section id="accesorios" class="tab-content">
+      <h2>Accesorios</h2>
+      <p>Contenido de accesorios.</p>
+    </section>
+
+    <section id="artistas" class="tab-content">
+      <h2>Artistas</h2>
+      <p>Perfil de artistas.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tienda de discos. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab-content').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+<script src="script.js"></script>
+</body>
+</body>
+</html>

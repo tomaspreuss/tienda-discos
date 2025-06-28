@@ -1,0 +1,44 @@
+
+body {
+  font-family: 'Bitcount Grid Double';
+}
+
+
+
+ img { 
+  width: 600px;
+  height: 600px;
+  object-fit: cover; /* opcional, para que se recorten bien */
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.search input {
+  padding: 5px;
+}
+.artist-profile {
+  padding: 20px;
+}
+.product-card {
+  font: bold 16px 'arial';
+
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+}
